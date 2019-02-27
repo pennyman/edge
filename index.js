@@ -7,7 +7,7 @@ const s3 = new aws.S3({
   signatureVersion: 'v4'
 });
 const sharp = require('sharp');
-const BUCKET = 'prod.thumb.s3.showprise.kr';
+const BUCKET = 's3 url 주소';
 
 exports.handler = async (event, context, callback) => {
   const response = event.Records[0].cf.response;
